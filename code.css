@@ -1,0 +1,111 @@
+.container{
+	display: grid;
+	grid-template-columns:repeat(4, 25%);
+	
+	grid-gap:5px;
+}
+.item{
+	background-color: skyblue;
+	border: 1px solid black;
+	padding: 15px 5px;
+	text-align: center;
+}
+.item:hover{
+	background-color: blue;
+}
+.circle{
+	border: 1px solid black;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 200px;
+	margin-left: 30%;
+	border-radius: 50%;
+	background-color: yellow;
+	animation-name: circle;
+	
+	
+	animation-duration:5s;
+
+}
+@keyframes circle{
+	
+		0%{
+			background-color: gray;
+		}
+25%{
+		background-color: red;
+	}
+	75%{
+		background-color: blue;
+	}
+	100%{
+		background-color: maroon;
+	}
+
+
+}
+.circle:hover{
+	height: 50%;
+	width: 50%;
+	border: 1px solid black;
+
+}
+
+.container1{
+	display: grid;
+	grid-template-columns:repeat(4, 25%);
+	
+	grid-gap:5px;
+	
+}
+.item1{
+	background-color: skyblue;
+	border: 1px solid black;
+	padding: 15px 5px;
+	text-align: center;
+	position: relative;
+	top: 1200%;
+
+}
+.item1:hover{
+	background-color:grey;
+}
+a{
+	text-decoration: none;
+}
+
+@media on screen (max-width:390px)
+{
+	.container{
+	display: grid;
+	grid-template-columns:repeat(4, 20%);
+	
+	grid-gap:5px;
+
+}
+.item{
+	background-color: skyblue;
+	border: 1px solid black;
+	padding: 15px 5px;
+	text-align: center;
+}
+.item:hover{
+	background-color: blue;
+}
+.circle{
+	border: 1px solid black;
+	height: 200px;
+	width: 200px;
+	position: absolute;
+	top: 200px;
+	margin-left:20%;
+	border-radius: 50%;
+	background-color: yellow;
+	animation-name: circle;
+}
+}
+
+
+
+
